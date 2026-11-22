@@ -1,1 +1,287 @@
-﻿<h1>Services</h1>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Services offered by Readers' Haven Public Library: lending, digital access, study spaces, programs and more.">
+  <title>Services | Readers' Haven Public Library</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+    }
+
+    /* Header */
+    .site-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 2rem;
+      background: #1f3a5f;
+      color: #fff;
+    }
+
+    .site-title {
+      margin: 0;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    .nav-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .nav-list a {
+      color: #fff;
+      text-decoration: none;
+      padding-bottom: 2px;
+    }
+
+    .nav-list a:hover,
+    .nav-list a[aria-current="page"] {
+      border-bottom: 2px solid #f2b705;
+    }
+
+    /* Hero */
+    .services-hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: #eef3f9;
+    }
+
+    .services-hero h1 {
+      margin: 0 0 .5rem;
+    }
+
+    /* Services Sections */
+    .services-section,
+    .services-cta {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .service-card {
+      padding: 1rem 1.25rem;
+      border: 1px solid #d5dde8;
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .service-card h3 {
+      margin-top: 0;
+      color: #1f3a5f;
+    }
+
+    /* Opening Hours */
+    .hours-table {
+      width: 100%;
+      max-width: 500px;
+      border-collapse: collapse;
+    }
+
+    .hours-table th,
+    .hours-table td {
+      padding: .6rem;
+      border: 1px solid #d5dde8;
+      text-align: left;
+    }
+
+    .hours-table th {
+      background: #eef3f9;
+    }
+
+    /* Buttons */
+    .services-cta {
+      text-align: center;
+    }
+
+    .button {
+      display: inline-block;
+      margin: .25rem;
+      padding: .6rem 1.2rem;
+      background: #1f3a5f;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    .button-secondary {
+      background: #f2b705;
+      color: #1f3a5f;
+    }
+
+    /* Footer */
+    .site-footer {
+      text-align: center;
+      padding: 1rem;
+      background: #1f3a5f;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <p class="site-title">Readers' Haven</p>
+
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="services.html" aria-current="page">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="services-hero">
+      <h1>Our Services</h1>
+      <p>Everything Readers' Haven offers to help you read, learn, study and connect, in the library and online.</p>
+    </section>
+
+    <section class="services-section" aria-labelledby="in-library">
+      <h2 id="in-library">In-Library Services</h2>
+
+      <div class="service-grid">
+
+        <article class="service-card">
+          <h3>Book Lending</h3>
+          <p>Borrow up to 10 books at a time for 3 weeks, with easy renewals at the desk or online.</p>
+        </article>
+
+        <article class="service-card">
+          <h3>Study Rooms</h3>
+          <p>Quiet individual desks and bookable group rooms with whiteboards and free Wi-Fi.</p>
+        </article>
+
+        <article class="service-card">
+          <h3>Computer &amp; Printing</h3>
+          <p>Public computers, scanning, photocopying and printing at low cost for members and visitors.</p>
+        </article>
+
+        <article class="service-card">
+          <h3>Reference Help</h3>
+          <p>Our librarians help you find sources, research a topic or choose your next read.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="services-section" aria-labelledby="digital">
+      <h2 id="digital">Digital Services</h2>
+
+      <div class="service-grid">
+
+        <article class="service-card">
+          <h3>E-Books &amp; Audiobooks</h3>
+          <p>Download thousands of titles to your phone, tablet or e-reader with your library card.</p>
+        </article>
+
+        <article class="service-card">
+          <h3>Online Catalogue</h3>
+          <p>Search the collection, reserve items and manage your account from home, any time.</p>
+        </article>
+
+        <article class="service-card">
+          <h3>Research Databases</h3>
+          <p>Free access to journals, newspapers and learning resources for students and adults.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="services-section" aria-labelledby="programs">
+      <h2 id="programs">Programs &amp; Community</h2>
+
+      <div class="service-grid">
+
+        <article class="service-card">
+          <h3>Children's Story Hour</h3>
+          <p>Weekend storytelling, crafts and reading games for young readers.</p>
+        </article>
+
+        <article class="service-card">
+          <h3>Book Clubs</h3>
+          <p>Monthly clubs for teens and adults, with a new title and lively discussion every time.</p>
+        </article>
+
+        <article class="service-card">
+          <h3>Workshops</h3>
+          <p>Digital literacy, resume writing and creative writing sessions led by local experts.</p>
+        </article>
+
+        <article class="service-card">
+          <h3>Accessibility Support</h3>
+          <p>Large-print books, assistive technology and home delivery for members who cannot visit.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="services-section" aria-labelledby="hours">
+      <h2 id="hours">Opening Hours</h2>
+
+      <table class="hours-table">
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Hours</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Monday – Friday</td>
+            <td>9:00 AM – 8:00 PM</td>
+          </tr>
+
+          <tr>
+            <td>Saturday</td>
+            <td>10:00 AM – 6:00 PM</td>
+          </tr>
+
+          <tr>
+            <td>Sunday</td>
+            <td>Closed</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="services-cta">
+      <h2>Ready to get started?</h2>
+      <p>Most services are free with a library membership.</p>
+
+      <p>
+        <a class="button" href="membership.html">View Membership Plans</a>
+        <a class="button button-secondary" href="contact.html">Contact Us</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; Readers' Haven Public Library</p>
+  </footer>
+
+</body>
+</html>
