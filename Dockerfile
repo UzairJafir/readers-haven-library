@@ -11,8 +11,11 @@ WORKDIR /app
 # Copy package manifest files first to leverage Docker layer caching
 COPY package*.json ./
 
-# Install dependencies using ci for a clean, reproducible install
-RUN npm ci
+# Install dependencies cleanly using npm ci with network retries to prevent ECONNRESET drops
+RUN npm config set fetch-retries 5 \
+    && npm config set fetch-retry-mintimeout 20000 \
+    && npm config set fetch-retry-maxtimeout 120000 \
+    && (npm ci || npm ci || npm ci)
 
 # Copy the source files needed for the build
 COPY src/ ./src/
